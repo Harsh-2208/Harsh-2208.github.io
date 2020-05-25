@@ -1,0 +1,78 @@
+.heading {
+  padding: 15px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.column1, .column2, .column3 {
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: calc(100% / 3 - 30px);
+  margin-bottom: 30px;
+}
+
+.colored-card {
+  background-color: #7e82b6;
+  border: 1px solid #000000;
+}
+.text-right{
+  text-align: right;
+}
+
+.badge1{
+  color: #000000;
+  background-color:#d38bb5;
+  padding: 3px 35px 3px 35px;
+  display: inline-block;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+  font-size: 20px;
+}
+
+.badge2{
+  color: #ffffff;
+  background-color:#812424;
+  padding: 3px 35px 3px 35px;
+  display: inline-block;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+  font-size: 20px;
+}
+.badge3{
+  color: #000000;
+  background-color:#c9b291;
+  padding: 3px 35px 3px 35px;
+  display: inline-block;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+  font-size: 20px;
+}
+
+.colored-card p{
+  margin: 10px;
+}
+
+.col-wrapper::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .column1 {
+      width: calc(50% - 30px);
+  }
+  .column2 {
+      width: calc(50% - 30px);
+  }
+  .column3 {
+      width: calc(100% - 30px);
+  }
+}
+
+@media(max-width:767px){
+  .column1, .column2, .column3 {
+      width: calc(100% - 30px);
+  }
+}
